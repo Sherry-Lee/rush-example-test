@@ -2,6 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@rush-temp/my-app': file:./projects/my-app.tgz
+  '@rush-temp/my-app2': file:./projects/my-app2.tgz
   '@rush-temp/my-controls': file:./projects/my-controls.tgz
   '@rush-temp/my-toolchain': file:./projects/my-toolchain.tgz
   '@types/node': ^10.9.4
@@ -12,6 +13,7 @@ specifiers:
 
 dependencies:
   '@rush-temp/my-app': file:projects/my-app.tgz
+  '@rush-temp/my-app2': file:projects/my-app2.tgz
   '@rush-temp/my-controls': file:projects/my-controls.tgz
   '@rush-temp/my-toolchain': file:projects/my-toolchain.tgz
   '@types/node': 10.17.60
@@ -113,6 +115,15 @@ packages:
   file:projects/my-app.tgz:
     resolution: {integrity: sha512-5hQYNQ4OaheE4snzorkB/UcTAnQcq8uQ0uHMSpu7Q/3IPc6neV5wlvC9IM2aRs+YoC5MpjQlzP8AneCY+KngnQ==, tarball: file:projects/my-app.tgz}
     name: '@rush-temp/my-app'
+    version: 0.0.0
+    dependencies:
+      typescript: 3.9.10
+      whatwg-fetch: 3.6.2
+    dev: false
+
+  file:projects/my-app2.tgz:
+    resolution: {integrity: sha512-fzky8yYWIX1dLjMJiWCtgSr7MwmJt6KvG8cYkUGmf38ixNnnA0lKSTLGz9z1LxIrXYInJ9BuulPpJAIDCiNxug==, tarball: file:projects/my-app2.tgz}
+    name: '@rush-temp/my-app2'
     version: 0.0.0
     dependencies:
       typescript: 3.9.10
